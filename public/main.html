@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<div>
+    <div class="main_cont">
+        <div class="menu">
+            <div class="logo_side">
+                <div class="logo"><img src="./icons/logo.png"></div>
+                <div id="hello">
+                    <p>Personal Planner</p>
+                    <p id="nameSurname"></p>
+                </div>
+            </div>
+            <div class="unchangable">
+                <div class="link_button">
+                    <img src="./icons/event_available_FILL0_wght400_GRAD0_opsz24.png" class="uc">
+                    <p class="text">My Day</p>
+                </div>
+                <div class="link_button">
+                    <img src="./icons/calendar_month_FILL0_wght400_GRAD0_opsz24.png" class="uc">
+                    <p class="text">Next 7 Days</p>
+                </div>
+                <div class="link_button">
+                    <img src="./icons/psychology_alt_FILL0_wght400_GRAD0_opsz24.png" class="uc">
+                    <p class="text">Habits</p>
+                </div>
+                <div class="link_button">
+                    <img src="./icons/attach_money_FILL0_wght400_GRAD0_opsz24.png" class="uc">
+                    <p class="text">Finances</p>
+                </div>
+                <div class="link_button">
+                    <img src="./icons/monitoring_FILL0_wght400_GRAD0_opsz24.png" class="uc">
+                    <p class="text">Goals</p>
+                </div>
+            </div>
+            <div class="list">
+                <div id="add_list">
+                    <p class="text">My Lists</p>
+                    <button id="add_show_list">
+                        <img src="icons/add_FILL0_wght400_GRAD0_opsz24.png">
+                    </button>
+                </div>
+                <div id="lists"></div>
+            </div>
+            <div id="open_close">
+                <img src="icons/chevron_left_FILL0_wght400_GRAD0_opsz24.png" id="extend">
+            </div>
+        </div>
+        <div class="content">
+            <div class="header">
+                <p>My Day</p>
+                <h5 id="motivation_message"></h5>
+                <p id="helloByName"></p>
+                <p id="date"></p>
+            </div>
+            <div id="task_side"></div>
+            <div class="task-add-cont">
+                <div id="add-task">
+                    <img src="./icons/add_FILL0_wght400_GRAD0_opsz24.png">
+                    <p>Add Task</p>
+                </div>
+            </div>
+            <div class="motivation">
+                <h3 id="motivation_message"></h3>
+            </div>
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <div class="contenier">
+                <!-- put svg X -->
+                <span class="close" id="closePopupButton">X</span> 
+                <input type="text" placeholder="task title" maxlength="10" id="title">
+                <br>
+                <textarea cols="30" rows="10" placeholder="description" maxlength="200" id="descriptionX"></textarea>
+                <br>
+                <button type="submit" id="task_submit">submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
